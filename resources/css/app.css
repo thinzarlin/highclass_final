@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type="number"] {
+        appearance: textfield;
+        -moz-appearance: textfield;
+    }
+}
+
+.select2-container--default .select2-selection--single{
+    border-radius: 0.5rem;
+    border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
+    --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    --tw-text-opacity: 1;
+    color: rgb(17 24 39 / var(--tw-text-opacity, 1));
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+}
+
+.select2-container .select2-selection--single{
+    height: 2.7rem;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+    height: 2.3rem;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    font-size: 1rem;
+    line-height: 2.2rem;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    font-size: 0.95rem;
+    height: auto;
+}
+
+.select2-container--default .select2-selection--multiple {
+    height: auto;
+    font-size: 0.95rem;
+}
+
+.select2 {
+    width: auto;
+    height: auto;
+}
+
+.select2.w-185 {
+    width: 185px;
+}
+
+.select2.w-249 {
+    width: 249px;
+}
+
+.select2.w-290 {
+    width: 290px;
+}
+
+div.dt-length select {
+    width: 4rem;
+}
